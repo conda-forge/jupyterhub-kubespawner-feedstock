@@ -36,6 +36,7 @@ Installing `jupyterhub-kubespawner` from the `conda-forge` channel can be achiev
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `jupyterhub-kubespawner` can be installed with:
