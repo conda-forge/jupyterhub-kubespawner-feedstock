@@ -1,5 +1,5 @@
 {% set name = "jupyterhub-kubespawner" %}
-{% set version = "0.16.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c340a522ca0dd89085e42446c8562e06f7b476fd71c174b0c1948b360f157c1
+  sha256: 3019f12b9de5b954575e48f214a05a39f958fd1b1b51357ab7fdb92042bdd5a5
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Kubernetes spawner for JupyterHub'
+  summary: Kubernetes spawner for JupyterHub
 
 extra:
   recipe-maintainers:
