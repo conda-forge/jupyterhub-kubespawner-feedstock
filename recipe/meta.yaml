@@ -1,5 +1,5 @@
 {% set name = "jupyterhub-kubespawner" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 867d7d364be870e72b9ac81fa90c167cc208d8d1185d58e80e6e75692eb2bdeb
+  sha256: b61af128c1b9a65d98773d4ba1d3e93454edea3ba39d9d7a2a28f65131faca23
 
 build:
   noarch: python
