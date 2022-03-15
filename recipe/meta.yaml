@@ -16,15 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - async_generator >=1.8
+    - python >=3.7
     - escapism
     - jinja2
-    - jupyterhub >=0.8
-    - python-kubernetes >=10.1.0
+    - jupyterhub >=0.9
+    - kubernetes_asyncio >=19.15.1
     - python-slugify
     - pyyaml
     - urllib3
