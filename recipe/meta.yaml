@@ -1,5 +1,5 @@
 {% set name = "jupyterhub-kubespawner" %}
-{% set version = "2.0.1" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a05194c52f34aaab1982f6585c7afa6681b18ab3e2ef47e4a3f942e3a5bcbd7d
+  sha256: b28a1091ccd2c0f449074a57f54bab07412cfba3a57cf0f3706a019c6a249179
 
 build:
   noarch: python
@@ -16,15 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - async_generator >=1.8
+    - python >=3.7
     - escapism
     - jinja2
-    - jupyterhub >=0.8
-    - python-kubernetes >=10.1.0
+    - jupyterhub >=0.9
+    - kubernetes_asyncio >=19.15.1
     - python-slugify
     - pyyaml
     - urllib3
