@@ -145,4 +145,5 @@ Feedstock Maintainers
 
 * [@consideratio](https://github.com/consideratio/)
 * [@dhirschfeld](https://github.com/dhirschfeld/)
+* [@manics](https://github.com/manics/)
 
