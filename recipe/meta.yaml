@@ -1,13 +1,13 @@
 {% set name = "jupyterhub-kubespawner" %}
-{% set version = "7.1.0" %}
+{% set version = "7.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ece25721ed26741d94d51429c7778fb86509e6be740712e9f158bc6d0192d4e2
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d02d3f2eea9c3e22ca831c76b6bc2341982b9555bd84f3d075021195efbd0822
 
 build:
   noarch: python
